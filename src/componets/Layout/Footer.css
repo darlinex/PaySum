@@ -1,0 +1,150 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer { 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Fix alignment issue */
+    padding: 20px 5%;
+    gap: 30px; /* Increased gap for better spacing */
+}
+
+/* Set equal widths for all divs inside .footer-div */
+.footer-div {
+    /* flex: 1;  
+    min-width: 200px;   */
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    padding-right: 170px;
+    padding-left: 70px;
+}
+
+.footer-address p {
+    color: rgba(84, 84, 84, 1);
+}
+
+.ol-links-footer li {
+    color: rgba(84, 84, 84, 1);
+}
+
+.legal-notice-p {
+    color: rgba(84, 84, 84, 1);
+}
+
+.footer-links p {
+    color: rgba(0, 41, 74, 1);
+}
+
+.p-legal-notice {
+    color: rgba(39, 48, 67, 1);
+}
+
+.footer-social {
+    color: rgba(39, 48, 67, 1);
+}
+
+.footer-address {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.call, .email {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Align icons and text properly */
+    gap: 10px;
+}
+
+.email {
+    color: rgba(255, 121, 67, 1);
+}
+
+.phone {
+    color: rgba(255, 121, 67, 1);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ol-links-footer {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.legal-notice {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    transition: 0.3s ease;
+    font-size: 20px;
+}
+
+.social-icons:hover {
+    color: rgba(255, 121, 67, 1);
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 700px) {
+    .footer-div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Centers text in smaller screens */
+    }
+
+    .address, .footer-links, .legal-notice, .footer-social {
+        width: 100%;
+    }
+}
+.bellow-footer {
+    display: flex;
+    justify-content: center;  /* Centers text horizontally */
+    align-items: center;      /* Centers text vertically */
+    padding: 15px 0;          /* Adds space inside the box */
+    position: relative;       /* Needed for pseudo-element positioning */
+}
+
+.bellow-footer::before {
+    content: "";              
+    position: absolute;
+    top: 0;                   /* Places border at the top */
+    left: 50%;                /* Starts at the center */
+    width: 90%;               /* Adjust to make the border shorter */
+    height: 2px;              /* Border thickness */
+    background-color: rgba(222, 222, 222, 1); /* Border color */
+    transform: translateX(-50%); /* Ensures the border remains centered */
+}
+
+.footer-copy {
+    color: rgba(84, 84, 84, 1); /* Text color */
+    font-size: 14px; /* Font size */
+    text-align: center; /* Ensures text stays centered */
+}
+

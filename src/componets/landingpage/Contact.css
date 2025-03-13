@@ -1,0 +1,68 @@
+.contact_contain{
+    width: 100%;
+    height: 100vh;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(255,248,246,255);
+    
+}
+
+.contact_text{
+    width: 620px;
+    height: 350px;
+    /* border: 1px solid black; */
+}
+
+.contact_pic{
+    width: 490px;
+    height: 450px;
+    /* border: 1px solid red; */
+}
+
+.contact_text h3{
+    color: #ff7943;
+}
+
+.contact_text h2{
+    color: black;
+    margin-top: 30px;
+}
+
+.contact_text p{
+    margin-top: 30px;
+}
+
+.phone_img{
+ margin-top: 20px;
+}
+
+.contact_text span{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact_text h4{
+    color: black;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.con{
+ color: rgba(0, 0, 0, 0.493);  
+ position: relative;
+ top: 20px;
+ right: 60px;
+}
+
+.contact_2{
+    margin-top: 15px;
+}
+
+.con1{
+    color: rgba(0, 0, 0, 0.493);  
+    position: relative;
+    top: 20px;
+    right: 40px;
+   }

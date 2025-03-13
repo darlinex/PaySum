@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.what-we-do-full-div {
+    position: relative;
+    width: 100%;
+    background-color: rgba(255, 248, 246, 1); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.what-we-do {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 50px 20px 30px; /* Added left and right padding */
+}
+
+.cards-for-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Even spacing */
+    flex-wrap: wrap; /* Ensure proper layout on small screens */
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px; /* Prevents stretching on large screens */
+}
+
+.card1 {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(177, 177, 177, 1);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Set a standard width */
+    height: 280px;
+    text-align: left;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+/* Hover effect for better interactivity */
+.card1:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.card1 h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.card1 div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.card1 p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+
+
+.check-div{
+    width: 20px;  /* Set width */
+    height: 20px; /* Set height */
+    background-color:rgba(23, 199, 52, 0.7); /* Green background */
+    border-radius: 50%; /* Makes it a circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.5) rotate(-180deg);
+    animation: fadeInRotate 0.6s ease-out forwards;
+
+}
+
+.i{
+    color: white; 
+    font-size: 20px; 
+    font-weight: bolder;
+}
+
+
+.check-div:hover {
+    animation: rotateInfinite 1s linear infinite;
+}
+
+@keyframes fadeInRotate {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(-180deg);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}
+
+/* Continuous Rotation on Hover */
+@keyframes rotateInfinite {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.what-we-do-first-p {
+    color: rgba(255, 121, 67, 1);
+    font-weight: bold;
+}
+
+.what-we-do h3 {
+    font-size: 2em;
+    line-height: 150%;
+}
+
+.secondp {
+    color: rgba(89, 89, 89, 1);
+    max-width: 600px;
+}
+
+.what-we-do-square {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgba(255, 121, 67, 0.5);
+}
+
+/* Centered Button */
+.contact-btn-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* padding: 25px 0; */
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+}
+
+/* Button Style */
+.contact-btn {
+    padding: 8px 16px;
+    width: 160px;
+    height: 40px;
+    background-color: transparent;
+    color: rgba(255, 121, 67, 1);
+    border: 2px solid rgba(255, 121, 67, 1);
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+
+/* Button Hover Effect */
+.contact-btn:hover {
+    background-color: rgba(255, 121, 67, 0.1);
+}
+
+
+.circle-for-what-we-do{
+    position: absolute;
+    /* left: 0; */
+    left: 30px;
+    bottom: 70px;
+    top: 470px;
+
+    z-index: 1;
+}

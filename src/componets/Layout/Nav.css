@@ -1,0 +1,122 @@
+@import 'tailwindcss';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.nav-hero-section{
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 2000;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(56,92,108);
+    width: 100%;
+    font-family: "Montserrat", serif;
+    padding: 10px 5%;
+}
+
+.logo{
+    display: flex;
+}
+
+
+ul{
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+    color: rgba(255, 255, 255, 1);
+    gap: 30px;
+
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+ul :hover{
+    background-color: rgb(46, 75, 88); /* Darker hover background */
+  color: white; /* Text color change */
+  border-color: rgb(46, 75, 88);
+}
+
+.button1{
+    background: transparent;
+    border: 1.5px solid white;
+    border-radius: 100px;
+    padding: 8px 20px;
+    color: white;
+}
+.sign-in-btn{
+    background: transparent;
+    border: 1.5px solid white;
+    border-radius: 100px;
+    padding: 8px 20px;
+    width: 140px;
+    color: white;
+}
+
+.button2, .request-btn{
+    background-color: rgba(255, 121, 67, 1);
+    color: white;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 121, 67, 1);
+    padding: 8px 25px;
+}
+
+
+/* Hover effect for button1 */
+.button1:hover {
+    background: white;
+    color: rgba(255, 121, 67, 1); /* Matching the primary color */
+    border: 1.5px solid rgba(255, 121, 67, 1);
+    transition: all 0.3s ease-in-out;
+}
+.request-btn:hover {
+    background: white;
+    color: rgba(255, 121, 67, 1); /* Matching the primary color */
+    border: 1.5px solid rgba(255, 121, 67, 1);
+    transition: all 0.3s ease-in-out;
+}
+.sign-in-btn:hover {
+    background: white;
+    color: rgba(255, 121, 67, 1); /* Matching the primary color */
+    border: 1.5px solid rgba(255, 121, 67, 1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for button2 */
+.button2:hover {
+    background: transparent;
+    color: rgba(255, 121, 67, 1);
+    border: 1px solid rgba(255, 121, 67, 1);
+    transition: all 0.3s ease-in-out;
+}
+.navss{
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100dvw;
+    height: 100dvh;
+}
+.navs > ul {
+    background-color: white;
+    color: black;
+}
+
+.navdiv{
+    display: flex;
+    flex-direction: column;
+}

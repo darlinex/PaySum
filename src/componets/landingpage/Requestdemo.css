@@ -1,0 +1,43 @@
+.request_container{
+    width: 100%;
+    height: 200px;
+    background-color: #003049;
+    background-image: url('../../assets/Demo_background.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.request_container h2{
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 500;
+}
+
+.request_container p{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 200;
+    margin-top:10px;
+
+}
+
+.demo_btn{
+   padding:10px 40px;
+   background-color: #ff7943;
+   color: white;
+   border-radius: 20px;
+   border: none;
+  margin-left: 45%;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+
+
+.demo_btn:hover {
+    transform: scale(1.1);
+  }

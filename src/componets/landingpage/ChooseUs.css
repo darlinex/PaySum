@@ -1,0 +1,146 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container for the section */
+.chooseUs {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns both divs at the top */
+    width: 100%;
+    height: auto;
+    gap: 80px;
+    padding-top: 90px;
+    padding-right: 54px;
+}
+
+/* Left-side: Image section */
+.man-circle-square {
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Removed padding-top to avoid misalignment */
+}
+
+/* Background square */
+.square-choose-us {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 43%;
+    z-index: 1;
+}
+
+/* Man image */
+.man-choose-us {
+    position: relative;
+    left: 150px;
+    z-index: 2;
+    bottom: 30px;
+    max-width: 400px;
+}
+
+.man-circle {
+    position: relative;
+    left: -95px;
+    top: 50px;
+}
+
+.circle-choose-us {
+    position: relative;
+    bottom: 240px;
+    left: 360px;
+}
+
+/* Right-side: Text section */
+.why-us-text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 45%;
+    padding-right: 20px;
+    /* Removed position: relative to avoid unwanted shifting */
+}
+
+/* Section title */
+.why-choose-p {
+    color: rgba(255, 121, 67, 1);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Paragraph styling */
+.why-choose-p2 {
+    color: rgba(89, 89, 89, 1);
+    line-height: 1.5;
+}
+
+/* Feature list */
+.div-choose {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+/* Small orange circle for bullet points */
+.small-circle {
+    border: 2px solid rgba(255, 121, 67, 1);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* Text inside features */
+.text-p {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Feature paragraph */
+.div-choose-p {
+    color: rgba(89, 89, 89, 1);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+    .chooseUs {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .man-circle-square, .why-us-text {
+        width: 100%;
+    }
+
+    .why-us-text {
+        align-items: center;
+    }
+
+    .div-choose {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .square-choose-us {
+        width: 90%;
+    }
+
+    .man-choose-us {
+        width: 100%;
+    }
+
+    .circle-choose-us {
+        right: 0;
+        bottom: -20px;
+    }
+}
