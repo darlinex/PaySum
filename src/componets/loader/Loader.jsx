@@ -1,0 +1,32 @@
+import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "../loader/Loader.css";
+function Loader() {
+  const navigate = useNavigate();
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+      navigate("/dashboard");
+    }, 3000); // Wait 3 seconds before navigating
+
+    return () => clearTimeout(timer); // Cleanup timeout
+  }, [navigate]);
+
+  return (
+    <div className="loader-container">
+      {loading && (
+        <motion.div
+          className="spinner"
+          animate={{ rotate: 360 }}
+          transition={{ repeat: Infinity, duration: 1, ease: "linear" }}
+        />
+      )}
+    </div>
+  );
+}
+
+export default Loader;
+
