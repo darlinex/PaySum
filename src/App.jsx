@@ -7,6 +7,8 @@ import ReactDOM from "react-dom/client";
 import Login from './componets/authentication/Login';
 // import Layout from './componets/Layout/Layout';
 import Register from './componets/authentication/Register';
+import Loader from './componets/loader/Loader';
+import Dashboard from './componets/dashboard/Dashboard ';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<Login />}/>
         <Route path="/register" element={<Register />}/>
+        <Route path="/loader" element={<Loader />}/>
+        <Route path="/dashboard" element={<Dashboard />}/>
 
 
         

@@ -4,6 +4,7 @@ import { LiaEyeSlash, LiaEye } from "react-icons/lia";
 import instance from "../axios/axiosinstance";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { Link } from 'react-router-dom'
 import "react-toastify/dist/ReactToastify.css";
 
 function Login() {
@@ -34,7 +35,7 @@ function Login() {
             const response = await instance.post("/auth/login/", cred);
             console.log(response.data.token);
             toast.success("Login successful! Redirecting...");
-            navigate("/coming-soon");
+            navigate("/loader");
         } catch (error) {
             if (error.response) {
                 const errorMessage = error.response.data.message || "Login failed. Try again.";
@@ -90,7 +91,9 @@ function Login() {
                     )}
                 </div>
 
+                <Link to={"/loader"}>
                 <button type="submit">Login</button>
+                </Link>
             </form>
         </div>
     );
