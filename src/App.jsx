@@ -1,7 +1,7 @@
 
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import LandingPage from './componets/landingpage/Landingpage';
+import LandingPage from './componets/landingpage/Landingpage';
 // import {  toast } from 'react-toastify';
 import ReactDOM from "react-dom/client";
 
@@ -15,7 +15,7 @@ function App() {
      
       <Routes>
         
-        {/* <Route path="/" element={<LandingPage />} /> */}
+        <Route path="/" element={<LandingPage />} />
 
         
         
