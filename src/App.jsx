@@ -9,8 +9,8 @@ import Layout from './componets/Layout/Layout';
 import Register from './componets/authentication/Register';
 import Loader from './componets/loader/Loader';
 import Dashboard from './componets/dashboard/Dashboard ';
-import Demo from './componets/Demopage/Demo';
-import Thankyoupage from './componets/demopage/Thanks';
+import Demo from './componets/request/Demo';
+import Thankyoupage from './componets/request/Thanks';
 
 function App() {
   return (
@@ -21,8 +21,8 @@ function App() {
         <Route path="/" element={<LandingPage />} />
 
         <Route path="" element={<Layout />}>
-    <Route path="/demo" element={<Demo />}  />
-    </Route>
+            <Route path="/demo" element={<Demo />}  />
+        </Route>
         <Route path="/login" element={<Login />}/>
         <Route path="/register" element={<Register />}/>
         <Route path="/loader" element={<Loader />}/>
