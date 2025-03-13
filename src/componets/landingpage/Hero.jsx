@@ -18,11 +18,14 @@ function HeroSection() {
                         calculations and employee details. Embrace convenience,
                         affordability and organization with our payroll system. </p>
                     <div className="herobtns">
+                        <Link to={"/demo"}>
+                        
                         <button className="request-btn">Request demo</button>
-                        <Link to ={"/register"}>
+                        </Link>
+                        
                         <button className="button1">See pricing </button>
                         
-                        </Link>
+                       
 
                     </div>
                 </div>
