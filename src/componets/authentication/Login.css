@@ -1,0 +1,116 @@
+.div-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+/* Login card styling */
+.login-card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    border: 1px solid rgba(255, 121, 67, 0.3);
+}
+
+/* Heading */
+.login-card h1 {
+    margin-bottom: 20px;
+    color: #083c5a;
+    font-size: 24px;
+}
+
+/* Label styling */
+.login-card label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    /* margin: 10px 0 5px; */
+    color: #083c5a;
+}
+
+/* Input field container */
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Input field styling */
+.login-card input {
+    width: 100%;
+    padding: 14px;
+    padding-right: 50px; /* Space for the icon */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    outline: none;
+}
+
+/* Input focus effect */
+.login-card input:focus {
+    border-color: rgba(255, 121, 67, 1);
+    box-shadow: 0px 0px 5px rgba(255, 121, 67, 0.5);
+}
+
+/* Password toggle icon */
+.input-container svg {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+    font-size: 18px;
+}
+
+/* Login button */
+.login-card button {
+    width: 100%;
+    padding: 14px;
+    background-color: rgba(255, 121, 67, 1);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Button hover effect */
+.login-card button:hover {
+    background-color: rgba(230, 100, 50, 1);
+}
+
+.password-eye{
+    position: relative;
+    
+    border-radius: 6px;
+}
+
+.input-password {
+    width: 100%;
+    padding: 10px 20px 10px 10px; /* Add some padding on the left for text */
+    padding-right: 40px; /* Add padding to the right so the icon doesn't overlap with text */
+    font-size: 16px;
+    /* border: 2px solid #D1D5DB; */
+    /* border-radius: 4px; */
+    background: transparent;
+    outline: none;
+  }
+
+  .see-password {
+    position: absolute;
+    right: 10px; /* Position the icon inside the input */
+    bottom: 20px;
+    /* top: 50%; */
+    transform: translateY(-50%); 
+    /* color: #888; Icon color */
+    cursor: pointer;
+  }
