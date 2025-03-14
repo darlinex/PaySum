@@ -4,8 +4,10 @@ import { LiaEyeSlash, LiaEye } from "react-icons/lia";
 import instance from "../axios/axiosinstance";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from 'react-router-dom'
 
 function Register() {
+    const navigate = useNavigate()
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -29,6 +31,7 @@ function Register() {
   // Handle Form Submission
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log(formData)
 
     // Validate password strength
     if (!isPasswordValid(formData.password)) {
@@ -50,6 +53,7 @@ function Register() {
 
       toast.success("Signup successful! Please log in.");
       console.log(response.data);
+      navigate(`/otp/${formData.email}`)
     } catch (error) {
       toast.error(error.response?.data?.message || "Signup failed. Try again.");
       console.error("Signup error:", error);
@@ -106,8 +110,10 @@ function Register() {
             <LiaEyeSlash className="see-password" onClick={() => setShowConfirmPassword(true)} />
           )}
         </div>
-
+          {/* <Link to={"/otp"}> */}
+          
         <button type="submit">Register</button>
+          {/* </Link> */}
       </form>
     </div>
   );

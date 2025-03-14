@@ -11,6 +11,7 @@ import Loader from './componets/loader/Loader';
 import Dashboard from './componets/dashboard/Dashboard ';
 import Demo from './componets/request/Demo';
 import Thankyoupage from './componets/request/Thanks';
+import Otp from './componets/authentication/Otp';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />}/>
         <Route path="/demo" element={<Demo />}/>
         <Route path="/thanks" element={<Thankyoupage />}/>
+        <Route path="/otp/:email" element={<Otp />}/>
 
 
         
