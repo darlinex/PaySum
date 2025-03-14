@@ -10,7 +10,7 @@ function Loader() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-      navigate("/dashboard");
+      navigate("/thanks");
     }, 3000); // Wait 3 seconds before navigating
 
     return () => clearTimeout(timer); // Cleanup timeout
