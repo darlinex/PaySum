@@ -25,6 +25,7 @@ function Login() {
 
     async function handleSubmit(e) {
         e.preventDefault();
+        console.log(cred)
 
         if (!cred.email || !cred.password) {
             toast.error("Please fill in both email and password.");

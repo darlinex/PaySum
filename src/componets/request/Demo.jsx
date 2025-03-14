@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
 import './Demo.css';
 import Ent from '../../assets/Entreprenuer.png';
+import instance from '../axios/axiosinstance';
 
 
 const Demo = () => {
@@ -18,13 +19,14 @@ const Demo = () => {
     phoneNumber: '',
     companyName: '',
     companyRole: '',
-    employeeHeadcount: '',
-    contactPreference: '', // 'phone' or 'email'
+    employeeHeadcount: 0,
+    contactPreference: 'phone', // 'phone' or 'email'
   });
 
   // Handle input change
   const handleInputChange = (e) => {
     const { name, value } = e.target;
+
     setFormData({ ...formData, [name]: value });
   };
 
@@ -36,7 +38,7 @@ const Demo = () => {
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    console.log(formData)
     // Validate form fields
     if (
       !formData.firstName ||
@@ -45,20 +47,20 @@ const Demo = () => {
       !formData.phoneNumber ||
       !formData.companyName ||
       !formData.companyRole ||
-      !formData.employeeHeadcount ||
-      !formData.contactPreference
+      !formData.employeeHeadcount
     ) {
       toast.error('Please fill all fields');
       return;
     }
-
+    console.log("bwfore request");
+    
     try {
       // Make API request
-      const response = await axios.post(
-        'https://payrum-1.onrender.com/api/auth/signup',
-        formData
+      const response = await
+        instance.post('/demo',
+        {...formData, employeeHeadcount: parseInt(formData.employeeHeadcount)}
       );
-
+      console.log('after request')
       // Handle success
       if (response.status === 200 || response.status === 201) {
         toast.success('Form submitted successfully!');
@@ -69,6 +71,7 @@ const Demo = () => {
     } catch (error) {
       // Handle error
       toast.error('An error occurred. Please try again.');
+      console.log('before error')
       console.error('API Error:', error);
     }
   };
@@ -156,28 +159,7 @@ const Demo = () => {
                 onChange={handleInputChange}
               />
 
-              <div className="radio-group">
-                <label className="custom-radio">
-                  <input
-                    type="radio"
-                    name="contactPreference"
-                    value="phone"
-                    checked={formData.contactPreference === 'phone'}
-                    onChange={handleRadioChange}
-                  />
-                  <span></span> Phone number
-                </label>
-                <label className="custom-radio">
-                  <input
-                    type="radio"
-                    name="contactPreference"
-                    value="email"
-                    checked={formData.contactPreference === 'email'}
-                    onChange={handleRadioChange}
-                  />
-                  <span></span> Email
-                </label>
-              </div>
+              
             </div>
           </div>
 

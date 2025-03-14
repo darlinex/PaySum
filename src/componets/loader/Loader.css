@@ -1,15 +1,25 @@
+.div-loader-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: white;
+
+}
+
+
 .loader-container {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: rgba(255, 121, 67, 1); /* Orange background */
+    background: white; /* Orange background */
   }
   
   .spinner {
     width: 60px;
     height: 60px;
-    border: 6px solid white;  /* White circle */
+    border: 6px solid rgba(255, 121, 67, 1);  /* White circle */
     border-top: 6px solid transparent; /* Transparent part for the spinning effect */
     border-radius: 50%;
   }

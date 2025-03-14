@@ -1,0 +1,98 @@
+.otp_container {
+    width: 100%;
+    height: 100vh;
+    background-color: #fafafa; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.otp_bord {
+    width: 480px;
+    height: 440px;  /* Adjust height to match design */
+    border: 0.5px solid #fa7643;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+}
+
+.otp_bord h1 {
+    font-family: "montserrat",;
+    color: #00294a;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.otp_bord p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #545454;
+    text-align: start;
+    margin-top: 15px;
+}
+.otp_ver {
+    display: flex;
+    justify-content: center;
+    gap: 16px;  /* Increase gap for better spacing */
+    margin-top: 40px;
+}
+
+.otpp {
+    width: 42px;  /* Increase size to match design */
+    height: 72px;
+    background-color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    outline: none;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: border 0.3s ease;
+    margin: 0 8px;  /* This ensures proper spacing */
+}
+
+.otpp:focus {
+    border: 2px solid #fa7643;
+}
+
+
+.resend_msg {
+    font-size: 16px;
+    font-family: "montserrat";
+    color: #545454;
+   position: relative;
+   top: 35px;
+}
+
+.resend_msg2 {
+    color: #fa7643;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 16px;
+   position: absolute;
+   top: 30px;
+}
+
+
+.verify_btn{
+    padding-left:30px ;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #fafafa;
+    background-color: #fa7643;
+    margin-top: 100px;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.verify_btn:hover{
+    background: white;
+    color: rgba(255, 121, 67, 1); /* Matching the primary color */
+    border: 1.5px solid rgba(255, 121, 67, 1);
+    transition: all 0.3s ease-in-out;
+}
