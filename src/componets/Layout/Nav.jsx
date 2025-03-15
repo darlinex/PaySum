@@ -72,7 +72,10 @@ function NavBar() {
 
                         <button className="sign-in-btn">Sign in</button>
                     </Link>
-                    <button className="button2">Request demo</button>
+                    <Link to={'/register'}>
+                    
+                    <button className="button2">Register Now</button>
+                    </Link>
                 </div>
 
                 <RxHamburgerMenu  onClick={toggleMenu} className='md:hidden'/>
