@@ -4,10 +4,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from './componets/landingpage/Landingpage';
 // import {  toast } from 'react-toastify';
 import ReactDOM from "react-dom/client";
-
-// import Layout from './componets/Layout/Layout';
-// import ComingSoon from "./Componets/home/coming-soon";
-// import Register from './componets/authentication/Register';
+import Login from './componets/authentication/Login';
+import Layout from './componets/Layout/Layout';
+import Register from './componets/authentication/Register';
+import Loader from './componets/loader/Loader';
+import Dashboard from './componets/dashboard/Dashboard ';
+import Demo from './componets/request/Demo';
+import Thankyoupage from './componets/request/Thanks';
+import Otp from './componets/authentication/Otp';
 
 function App() {
   return (
@@ -16,6 +20,18 @@ function App() {
       <Routes>
         
         <Route path="/" element={<LandingPage />} />
+
+        <Route path="" element={<Layout />}>
+            <Route path="/demo" element={<Demo />}  />
+        </Route>
+        <Route path="/login" element={<Login />}/>
+        <Route path="/register" element={<Register />}/>
+        <Route path="/loader" element={<Loader />}/>
+        <Route path="/dashboard" element={<Dashboard />}/>
+        <Route path="/demo" element={<Demo />}/>
+        <Route path="/thanks" element={<Thankyoupage />}/>
+        <Route path="/otp/:email" element={<Otp />}/>
+
 
         
         
