@@ -72,9 +72,9 @@ function NavBar() {
 
                         <button className="sign-in-btn">Sign in</button>
                     </Link>
-                    <Link to={"/demo"}>
+                    <Link to={"/register"}>
                     
-                    <button className="button2">Request demo</button>
+                    <button className="button2">Register now</button>
                     </Link>
                 </div>
 
